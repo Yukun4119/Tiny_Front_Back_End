@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import { BrowserRouter, Route,useLocation, Link} from 'react-router-dom';
-const page3 = () => {
+const page3 = (props) => {
     return(
         <div>
              <p> page3</p>

@@ -25,11 +25,11 @@ const Answer = (props) => {
       setRes(content['Answer'])
     };
 
-    fetchData("4")
+    fetchData(props.id)
     return(
         <div>
              <p> answer</p>
-              <Button onClick = {() => console.log(12)}type="primary">q2</Button> 
+              <Button onClick = {() => console.log(props.id)}type="primary">q2</Button> 
               <p>{res}</p>
         </div>
     )

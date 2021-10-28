@@ -13,16 +13,16 @@ const App = () => {
       <BrowserRouter>
         <>
           <Route path='/' exact render = {() => 
-            <Homepage/>
+            <Homepage id="1"/>
           }/>
           <Route path='/page2' exact render = {() => 
-            <Page2/>
+            <Page2 id="12"/>
           }/>
            <Route path='/page2/page3' exact render = {() => 
-            <Page3/>
+            <Page3 id="123"/>
           }/>
            <Route path='/page2/page3/answer' exact render = {() => 
-            <Answer/>
+            <Answer id="3"/>
           }/>
         </>
       </BrowserRouter>
