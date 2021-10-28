@@ -1,41 +1,31 @@
 import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter, Route,useLocation, Link} from 'react-router-dom';
+import Homepage from "./pages/home"
+import Page2 from './pages/page2'
+import Answer from './pages/answer'
+import Page3 from './pages/page3'
 import { Button } from 'antd';
 
-const params = {
-  "id": "3",
-  'q': "q1",
-  'a': "a2"
-}
-
-
-const fetchData = async(myID) => {
-  const response = await fetch("http://127.0.0.1:8000/hello",{
-    method: 'POST',
-    headers: {
-      'Content-Type':'application/json'
-    },
-    body: JSON.stringify({
-      "id":myID
-    })
-  });
-  
-  const content = await response.json()
-  console.log(content['Answer'])
-  // 
-};
-
-
-
-function App() {
-  console.log(fetchData("2"))
+const App = () => {
   return (
     <div className="App">
-      <p>12</p>
-      <p>pic</p>
-      <>
-      <Button type="primary"><img src="./1.png"/></Button>
-      </>
-      
+      <BrowserRouter>
+        <>
+          <Route path='/' exact render = {() => 
+            <Homepage/>
+          }/>
+          <Route path='/page2' exact render = {() => 
+            <Page2/>
+          }/>
+           <Route path='/page2/page3' exact render = {() => 
+            <Page3/>
+          }/>
+           <Route path='/page2/page3/answer' exact render = {() => 
+            <Answer/>
+          }/>
+        </>
+      </BrowserRouter>
     </div>
   );
 }
