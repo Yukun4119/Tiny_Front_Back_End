@@ -7,8 +7,8 @@ const home = (props) => {
     return(
         <div>
             <img src="./1.png"/>
-            <Link to="/page2">
-                <Button  onClick={() => console.log(props)}type="primary">q1</Button>
+            <Link to="/page2/1">
+                <Button  onClick={() => console.log(props)} type="primary">q1</Button>
             </Link>
             <Button type="primary">q2</Button>
         </div>

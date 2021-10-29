@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
-import { BrowserRouter, Route,useLocation, Link} from 'react-router-dom';
+import { BrowserRouter, Route,useLocation, Link, useParams} from 'react-router-dom';
 
 const params = {
     "id": "3",
@@ -10,6 +10,7 @@ const params = {
 
 const Answer = (props) => {
     const [res, setRes] = useState(-1);
+    let {id} = useParams()
 
     const fetchData = async(myID) => {
       const response = await fetch("http://127.0.0.1:8000/hello",{
@@ -30,7 +31,7 @@ const Answer = (props) => {
         <div>
              <p> answer</p>
               <Button onClick = {() => console.log(props.id)}type="primary">q2</Button> 
-              <p>{res}</p>
+              <p>123 - {id}</p>
         </div>
     )
 };
