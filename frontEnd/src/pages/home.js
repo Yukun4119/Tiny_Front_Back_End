@@ -4,13 +4,14 @@ import { Button } from 'antd';
 const home = (props) => {
     // const location = useLocation();
     // console.log(location.pathname);
+    let path =`/page2/1`
     return(
         <div>
             <img src="./1.png"/>
-            <Link to="/page2/1">
-                <Button  onClick={() => console.log(props)} type="primary">q1</Button>
+            <Link to={path}>
+                <Button  onClick={() => console.log(props)} type="primary">I NEED SOMETHING</Button>
             </Link>
-            <Button type="primary">q2</Button>
+            {/* <Button type="primary">q2</Button> */}
         </div>
     )
 };

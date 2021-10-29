@@ -5,7 +5,8 @@ import Homepage from "./pages/home"
 import Page2 from './pages/page2'
 import Answer from './pages/answer'
 import Page3 from './pages/page3'
-import { Button } from 'antd';
+import Page4 from './pages/page4'
+import Page5 from './pages/page5'
 
 const App = () => {
   return (
@@ -20,6 +21,12 @@ const App = () => {
           }/>
            <Route path='/page3/:id' exact render = {() => 
             <Page3/>
+          }/>
+           <Route path='/page4/:id' exact render = {() => 
+            <Page4/>
+          }/>
+           <Route path='/page5/:id' exact render = {() => 
+            <Page5/>
           }/>
            <Route path='/answer/:id' exact render = {() => 
             <Answer />

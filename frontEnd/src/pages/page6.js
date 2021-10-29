@@ -4,7 +4,7 @@ import {useParams, BrowserRouter, Route,useLocation, Link} from 'react-router-do
 const Page3 = () => {
 
     let {id} = useParams()
-    let path1 =`/page4/${id * 10 + 1}`
+    let path1 =`/answer/${id * 10 + 1}`
     return(
         <div>
              <p> page3 - {id}</p>

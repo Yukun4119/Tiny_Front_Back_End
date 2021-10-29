@@ -4,14 +4,14 @@ import { BrowserRouter, Route,useLocation, Link, useParams} from 'react-router-d
 
 const Page2 = (props) => {
     let {id} = useParams() 
+    let path1 =`/page3/${id * 10 + 1}`
     return(
         <div>
             <p> page2 - {id}</p>
-            <Button  onClick={() => console.log({id})}type="primary">tttttpage2</Button>
-            <Link to="/page3/123">
-                <Button  onClick={() => console.log(12333)}type="primary">q1</Button>
+            <Link to={path1}>
+                <Button  onClick={() => console.log()}type="primary">EDUCATION</Button>
             </Link>
-            <Button type="primary">q2</Button>
+            {/* <Button type="primary">q2</Button> */}
         </div>
     )
 };

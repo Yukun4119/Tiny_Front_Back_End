@@ -7,7 +7,6 @@ const params = {
     'q': "q1",
     'a': "a2"
   }
-
 const Answer = (props) => {
     const [res, setRes] = useState(-1);
     let {id} = useParams()
@@ -26,12 +25,12 @@ const Answer = (props) => {
       setRes(content['Answer'])
     };
 
-    fetchData(props.id)
+    fetchData(id)
     return(
         <div>
              <p> answer</p>
-              <Button onClick = {() => console.log(props.id)}type="primary">q2</Button> 
-              <p>123 - {id}</p>
+              <Button onClick = {() => console.log()}type="primary">q2</Button> 
+              <p>solution - {res}</p>
         </div>
     )
 };
