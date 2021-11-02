@@ -8,6 +8,8 @@ const home = (props) => {
     return(
         <div>
             <img src="./1.png"/>
+            <p>helo</p>
+            <p>helo</p>
             <Link to={path}>
                 <Button  onClick={() => console.log(props)} type="primary">I NEED SOMETHING</Button>
             </Link>

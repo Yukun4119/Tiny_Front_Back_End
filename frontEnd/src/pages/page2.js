@@ -11,7 +11,16 @@ const Page2 = (props) => {
             <Link to={path1}>
                 <Button  onClick={() => console.log()}type="primary">EDUCATION</Button>
             </Link>
-            {/* <Button type="primary">q2</Button> */}
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
+            <img>fsdfs</img>
         </div>
     )
 };
