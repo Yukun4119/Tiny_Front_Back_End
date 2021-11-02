@@ -7,13 +7,9 @@ const home = (props) => {
     let path =`/page2/1`
     return(
         <div>
-            <img src="./1.png"/>
-            <p>helo</p>
-            <p>helo</p>
             <Link to={path}>
-                <Button  onClick={() => console.log(props)} type="primary">I NEED SOMETHING</Button>
+                <Button  onClick={() => console.log(props)} type="primary">Click ME!</Button>
             </Link>
-            {/* <Button type="primary">q2</Button> */}
         </div>
     )
 };

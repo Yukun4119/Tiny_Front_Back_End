@@ -9,18 +9,8 @@ const Page2 = (props) => {
         <div>
             <p> page2 - {id}</p>
             <Link to={path1}>
-                <Button  onClick={() => console.log()}type="primary">EDUCATION</Button>
+                <Button  onClick={() => console.log()}type="primary">Opt 1</Button>
             </Link>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
-            <img>fsdfs</img>
         </div>
     )
 };

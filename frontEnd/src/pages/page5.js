@@ -10,10 +10,10 @@ const Page5 = () => {
         <div>
              <p> page5 - {id}</p>
             <Link to = {path1}>
-                <Button  onClick={() => console.log()}type="primary">Rejected because of my race/gender/belief</Button>
+                <Button  onClick={() => console.log()}type="primary">Opt 1</Button>
             </Link>
             <Link to = {path2}>
-                <Button  onClick={() => console.log()}type="primary">Rejected because I can't pay the fee</Button>
+                <Button  onClick={() => console.log()}type="primary">Opt 2</Button>
             </Link>
         </div>
     )

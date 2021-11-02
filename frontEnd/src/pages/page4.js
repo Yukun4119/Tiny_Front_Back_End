@@ -10,10 +10,10 @@ const Page4 = () => {
         <div>
              <p> page4 - {id}</p>
             <Link to = {path1}>
-                <Button  onClick={() => console.log()}type="primary">Just start and don't have any idea</Button>
+                <Button  onClick={() => console.log()}type="primary">Opt 1</Button>
             </Link>
             <Link to = {path2}>
-                <Button  onClick={() => console.log()}type="primary">Already have one I want to get in but was stuck</Button>
+                <Button  onClick={() => console.log()}type="primary">Opt 2</Button>
             </Link>
         </div>
     )

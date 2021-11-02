@@ -9,7 +9,7 @@ const Page3 = () => {
         <div>
              <p> page3 - {id}</p>
             <Link to = {path1}>
-                <Button  onClick={() => console.log()}type="primary">I am looking for a school</Button>
+                <Button  onClick={() => console.log()}type="primary">Opt 1</Button>
             </Link>
         </div>
     )
